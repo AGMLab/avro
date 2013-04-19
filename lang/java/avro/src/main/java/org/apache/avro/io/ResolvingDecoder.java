@@ -41,7 +41,7 @@ public class ResolvingDecoder extends ValidatingDecoder {
 
   private Decoder backup;
   
-  ResolvingDecoder(Schema writer, Schema reader, Decoder in)
+  public ResolvingDecoder(Schema writer, Schema reader, Decoder in)
     throws IOException {
     this(resolve(writer, reader), in);
   }
